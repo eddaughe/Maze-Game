@@ -1,0 +1,6 @@
+The aim of this project is to produce a fully functional maze game with different mechanics to let the player know how they did scorewise, and how many wins they currently have. The code works as follows. 
+The finish line class makes it so the program knows when you've won the game. The UI manager basically draws the game. The FrameRateManager is there so the game doesn't crash. Track handles the loading of tracks from the maze file. The player class builds the 
+green rectangle that the player is. The Input manager allows the player to move using arrow keys and WASD. The save manager class writes the data to the csv file for persistent storage. The Wall class build the walls. The Object class is the abstract class that is
+extended by the finish line, player, and wall classes. Track reader simply reads the track.
+All the player really need to know to play the game is that the controls are wasd/arrow keys, the walls are grey, and the green player model's goal is to get to the magenta square. You may also change the letters around in the maze file to create a new maze where 
+the finish line and walls could be different entirely. Just don't put a wall on the player model.
